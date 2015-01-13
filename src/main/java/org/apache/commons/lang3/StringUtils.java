@@ -382,6 +382,7 @@ public class StringUtils {
     // Trim
     //-----------------------------------------------------------------------
     /**
+     * 控制字符的判断依据{val[st] <= ' '}进行判断
      * <p>Removes control characters (char &lt;= 32) from both
      * ends of this String, handling {@code null} by returning
      * {@code null}.</p>
@@ -463,8 +464,8 @@ public class StringUtils {
     // Stripping
     //-----------------------------------------------------------------------
     /**
+     *	这个方法类似于trim方法。但是空白的判断是依据{@link #Character.isWhitespace}进行判断
      * <p>Strips whitespace from the start and end of a String.</p>
-     *
      * <p>This is similar to {@link #trim(String)} but removes whitespace.
      * Whitespace is defined by {@link Character#isWhitespace(char)}.</p>
      *
@@ -671,6 +672,7 @@ public class StringUtils {
     // StripAll
     //-----------------------------------------------------------------------
     /**
+     * 字符串数组去首尾空格
      * <p>Strips whitespace from the start and end of every String in an array.
      * Whitespace is defined by {@link Character#isWhitespace(char)}.</p>
      *
@@ -830,6 +832,7 @@ public class StringUtils {
     // IndexOf
     //-----------------------------------------------------------------------
     /**
+     * 字符串中第一次出现指定字符的下标。找不到返回-1[注：下表从0开始计算]
      * <p>Finds the first index within a CharSequence, handling {@code null}.
      * This method uses {@link String#indexOf(int, int)} if possible.</p>
      *
@@ -857,6 +860,7 @@ public class StringUtils {
     }
 
     /**
+     * 返回从指定开位置开始搜索找到的第一个匹配字符的下表[注：下表从0开始计算]
      * <p>Finds the first index within a CharSequence from a start position,
      * handling {@code null}.
      * This method uses {@link String#indexOf(int, int)} if possible.</p>
@@ -890,6 +894,7 @@ public class StringUtils {
     }
 
     /**
+     * 返回给定字符串与指定字符串相匹配的开始点的下标[注：下表从0开始计算]
      * <p>Finds the first index within a CharSequence, handling {@code null}.
      * This method uses {@link String#indexOf(String, int)} if possible.</p>
      *
@@ -961,6 +966,7 @@ public class StringUtils {
     }
 
     /**
+     * 返回的是相对下标。其它同indexOf(final CharSequence seq, final CharSequence searchSeq, final int startPos)方法相似。
      * <p>Finds the n-th index within a CharSequence, handling {@code null}.
      * This method uses {@link String#indexOf(String)} if possible.</p>
      *
