@@ -838,7 +838,7 @@ public class ArrayUtils {
         return array;
     }
 
-    // Subarrays
+    // Subarrays  从指定的开始下标和结束下标处拷贝数组到新数组中
     //-----------------------------------------------------------------------
     /**
      * <p>Produces a new array containing the elements between
@@ -1426,6 +1426,7 @@ public class ArrayUtils {
     // Reverse
     //-----------------------------------------------------------------------
     /**
+     * 逆排序数组元素
      * <p>Reverses the order of the given array.</p>
      *
      * <p>There is no special handling for multi-dimensional arrays.</p>
@@ -1874,6 +1875,7 @@ public class ArrayUtils {
     // Object IndexOf
     //-----------------------------------------------------------------------
     /**
+     * 查找指定元素第一次出现的下标
      * <p>Finds the index of the given object in the array.</p>
      *
      * <p>This method returns {@link #INDEX_NOT_FOUND} ({@code -1}) for a {@code null} input array.</p>
@@ -1925,6 +1927,7 @@ public class ArrayUtils {
     }
 
     /**
+     * 查找指定元素最后次出现的下标[注：若元素不为空则使用元素equals进行比较]
      * <p>Finds the last index of the given object within the array.</p>
      *
      * <p>This method returns {@link #INDEX_NOT_FOUND} ({@code -1}) for a {@code null} input array.</p>
@@ -2948,6 +2951,7 @@ public class ArrayUtils {
     // Character array converters
     // ----------------------------------------------------------------------
     /**
+     * 将字符的封装类数组转换为char类型数组
      * <p>Converts an array of object Characters to primitives.</p>
      *
      * <p>This method returns {@code null} for a {@code null} input array.</p>
